@@ -1,24 +1,21 @@
-# README
+## What is this example app?
+This is a Ruby on Rails 5 example app generating CSP(Content Security Policy)
+reports due to a quite locked down CSP Policy. It uses Twitters Secure Headers
+gem to configure the CSP Policy. It's defined in
+`config/initializers/secure_headers.rb`.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
+```
+git clone https://github.com/csp-reporting/example_app.git
+cd example_app
+bundle install
+source .env
+bundle exec rails s
+```
 
-Things you may want to cover:
+## Configuration
+Edit the .env file to suit by which URI your report recieving
+application is accessible.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+MIT
